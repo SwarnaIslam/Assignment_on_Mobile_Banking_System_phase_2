@@ -37,15 +37,14 @@ public class Rocket extends  Account {
 
     public String get_pin_updated(String old_pin,String new_pin)
     {
-        if(super.is_pin_update_possible(old_pin))
+        if(is_pin_update_possible(old_pin))
         {
-            super.setPin_number(new_pin,"updated");
-            return getPin_number();
+            if(new_pin.length()==4)
+                super.setPin_number(new_pin,"updated");
+            else
+                System.out.println("Pin number must contain 4 digits.");
         }
-        else
-        {
-            return getPin_number();
-        }
+        return getPin_number();
     }
 
     @Override

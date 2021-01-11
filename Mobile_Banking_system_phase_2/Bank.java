@@ -38,7 +38,7 @@ public class Bank {
       tamim.cash_out_amount(5000);
       tamim.cash_out_pin("6783");
       tamim_pin=tamim.get_pin_updated("6783","3467");
-      tamim_pin=tamim.get_pin_updated(tamim_pin,"3467");
+      tamim_pin=tamim.get_pin_updated(tamim_pin,"3767");
 
       tamim.cash_out_amount(3000);
       tamim.cash_out_pin(tamim_pin);

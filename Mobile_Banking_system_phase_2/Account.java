@@ -6,7 +6,6 @@ public class Account {
     private String pin_number;
     private String account_number;
     private double balance;
-    private double withdraw;
 
     //User's information has been initialized without setting pin number
     public Account(String customer_name, String mobile_number,String account_number)
